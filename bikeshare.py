@@ -286,7 +286,7 @@ def station_stats(df):
     # print(trip)
     popular_trip_count = df['trip'][df['trip']==popular_trip].count()
     # print(count)
-    print('Start Station\tEnd Station\tCount')
+    print('Start Station\t\tEnd Station\t\tCount')
     print('{}\t{}\n'.format(popular_trip,popular_trip_count))
 
 
