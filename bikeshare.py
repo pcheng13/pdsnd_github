@@ -54,10 +54,8 @@ def get_filter_on_month_or_day():
 
             if filter_or_not=='month':
                 limit_on_month = True
-                limit_on_day = False
                 break
             elif filter_or_not=='day': 
-                limit_on_month = False
                 limit_on_day = True
                 break
             elif filter_or_not=='both': 
@@ -65,8 +63,6 @@ def get_filter_on_month_or_day():
                 limit_on_day = True
                 break
             elif filter_or_not=='none': 
-                limit_on_month = False
-                limit_on_day = False
                 break
             else:
                 print('Your input does not seem right. Please try again.\n')
@@ -290,7 +286,7 @@ def station_stats(df):
     # print(trip)
     popular_trip_count = df['trip'][df['trip']==popular_trip].count()
     # print(count)
-    print('Start Station\tEnd Station\tCount')
+    print('Start Station\t\tEnd Station\t\tCount')
     print('{}\t{}\n'.format(popular_trip,popular_trip_count))
 
 
